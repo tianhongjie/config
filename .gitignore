@@ -6,6 +6,11 @@
 
 !.zshrc
 !.vimrc
+!.bash_aliases
+!.bash_history
+!.bashrc
+!.tmux.conf
+
 
 !*.md
 
