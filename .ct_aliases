@@ -1,0 +1,9 @@
+alias aptcs="sudo apt-cache search "
+alias apti="sudo apt-get install "
+alias youtube-dl-a="youtube-dl --proxy http://127.0.0.1:8060 -t -a "
+
+_pipwi() {
+    pip wheel $1;
+    pip install $1;
+}
+alias pipwi=_pipwi

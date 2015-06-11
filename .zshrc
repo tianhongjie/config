@@ -129,7 +129,8 @@ tmux_init()
 
 # 判断是否已有开启的tmux会话，没有则开启
 if which tmux 2>&1 >/dev/null; then
-    test -z "$TMUX" && tmux_init
+#    test -z "$TMUX" && tmux_init
 fi
 
 source /etc/zsh_command_not_found
+
