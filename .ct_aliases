@@ -7,3 +7,14 @@ _pipwi() {
     pip install $1;
 }
 alias pipwi=_pipwi
+
+_enfile() {
+    tar -zcvf - $1|openssl des3 -salt -k "$(cat ~/.ssh/id_rsa)" | dd of=$1.ct
+}
+
+_defile() {
+    dd if=$1|openssl des3 -d -k "$(cat ~/.ssh/id_rsa)"|tar zxf -
+}
+
+alias ctenfile=_enfile
+alias ctdefile=_defile
