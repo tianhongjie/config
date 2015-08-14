@@ -18,3 +18,10 @@ _defile() {
 
 alias ctenfile=_enfile
 alias ctdefile=_defile
+
+_upt(){
+cd /home/charlie/workspace/goldcap-app
+git pull
+}
+
+alias upt=_upt

@@ -13,7 +13,6 @@
 
 
 !*.md
-!*.ct
 
 # ...even if they are in subdirectories
 # !*/
